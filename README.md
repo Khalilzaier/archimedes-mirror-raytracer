@@ -2,8 +2,6 @@
 
 Les soldats de Syracuse auraient-ils pu incendier la flotte romaine en renvoyant le soleil avec leurs boucliers de bronze ? Ce dépôt répond par le calcul : un moteur de lancer de rayons Monte-Carlo en C++ suit la lumière du soleil jusqu'aux miroirs puis jusqu'à la coque, et mesure le flux reçu en W/m², à comparer au seuil d'inflammation du bois.
 
-![Carte de flux](figures/fig2_carte_flux.png)
-
 ## Ce que fait le programme
 
 Pour chaque miroir, on tire des milliers de rayons. Chaque rayon :
