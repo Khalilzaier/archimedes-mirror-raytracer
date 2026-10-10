@@ -55,7 +55,7 @@ Une erreur de 0,5° sur l'orientation d'un miroir dévie le faisceau de 1°, soi
 
 ## Hypothèses et limites
 
-Ce modèle répond à une question précise (quel flux atteint la coque ?) et laisse de côté :
+Mon modèle répond à la question Quel flux atteint la coque ? et laisse de côté :
 
 - l'**ombrage** et le **blocage** entre miroirs voisins (optimiste) ;
 - la **forme réelle des boucliers**, convexes et ronds, ici supposés plans et carrés (optimiste : un miroir convexe disperse la lumière) ;
@@ -82,7 +82,7 @@ Tout paramètre se règle en ligne de commande, par exemple `aim=0.5` (erreur de
 
 ## Organisation du code
 
-| Fichier | Rôle |
+| Fichier | Role |
 |---|---|
 | `src/vec3.hpp` | vecteurs 3D, produit scalaire et vectoriel, loi de la réflexion |
 | `src/config.hpp` | tous les paramètres et leur lecture en ligne de commande |
@@ -91,9 +91,9 @@ Tout paramètre se règle en ligne de commande, par exemple `aim=0.5` (erreur de
 | `src/main.cpp` | les quatre modes et l'écriture des CSV |
 | `scripts/plot_results.py` | figures |
 
-Les balayages utilisent OpenMP s'il est disponible : chaque simulation est indépendante, elles sont réparties sur tous les coeurs du processeur.
+Les balayages utilisent OpenMP
 
-## Pistes pour aller plus loin
+## Ce que je vais faire plus tard pour aller plus loin
 
 - Ajouter l'ombrage entre miroirs (tester si le rayon incident ou réfléchi croise un autre miroir).
 - Modéliser des boucliers ronds et légèrement convexes.
